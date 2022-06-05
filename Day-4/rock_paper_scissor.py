@@ -1,4 +1,4 @@
-print("Welcome to Rock, Paper,")
+print("Welcome to Rock, Paper, Scissor")
 print('''
 
             d88b               __     __
@@ -20,6 +20,7 @@ print('''
  88888888888b
 ''')
 import random
+player = input("What's your name? ")
 player_choice = int(input("Enter 0 for rock, 1 for paper, 2 for scissor: "))
 computer_choice = random.randint(0, 2)
 if computer_choice == 0:
@@ -47,7 +48,7 @@ elif computer_choice == 1:
 elif computer_choice == 2:
     print("Computer chose Scissor")
     # Scissors
-print("""
+    print("""
     _______
 ---'   ____)____
           ______)
@@ -58,6 +59,7 @@ print("""
     
 
 if player_choice == 0:
+    print("You Chose Rock")
     print("""
     _______
 ---'   ____)
@@ -68,6 +70,7 @@ if player_choice == 0:
 """)
 elif player_choice == 1:
     # Paper
+    print("You chose Paper")
     print("""
      _______
 ---'    ____)____
@@ -78,6 +81,7 @@ elif player_choice == 1:
 """)
 elif player_choice == 2:
     # Scissors
+    print("You chose Scissor")
     print("""
     _______
 ---'   ____)____
