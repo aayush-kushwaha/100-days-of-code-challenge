@@ -20,11 +20,10 @@ print('''
  88888888888b
 ''')
 import random
-player = input("What's your name? ")
-player_choice = int(input("Enter 0 for rock, 1 for paper, 2 for scissor: "))
+player_choice = int(input("Enter 0 for rock, 1 for paper, 2 for scissor: \n"))
 computer_choice = random.randint(0, 2)
 if computer_choice == 0:
-    print("Computer chose Rock")
+    print("\nComputer chose Rock")
     # Rock
     print("""
     _______
@@ -35,7 +34,7 @@ if computer_choice == 0:
 ---.__(___)
 """)
 elif computer_choice == 1:
-    print("Computer chose Paper")
+    print("\nComputer chose Paper")
     # Paper
     print("""
      _______
@@ -46,7 +45,7 @@ elif computer_choice == 1:
 ---.__________)
 """)
 elif computer_choice == 2:
-    print("Computer chose Scissor")
+    print("\nComputer chose Scissor")
     # Scissors
     print("""
     _______
@@ -59,7 +58,7 @@ elif computer_choice == 2:
     
 
 if player_choice == 0:
-    print("You Chose Rock")
+    print("\nYou Chose Rock")
     print("""
     _______
 ---'   ____)
@@ -70,7 +69,7 @@ if player_choice == 0:
 """)
 elif player_choice == 1:
     # Paper
-    print("You chose Paper")
+    print("\nYou chose Paper")
     print("""
      _______
 ---'    ____)____
@@ -81,7 +80,7 @@ elif player_choice == 1:
 """)
 elif player_choice == 2:
     # Scissors
-    print("You chose Scissor")
+    print("\nYou chose Scissor")
     print("""
     _______
 ---'   ____)____
@@ -94,17 +93,17 @@ elif player_choice == 2:
 if computer_choice == 0 and player_choice == 0:
     print("Draw")
 elif computer_choice == 0 and player_choice == 1:
-    print("Player Won")
+    print("You Won")
 elif computer_choice == 0 and player_choice == 2:
     print("Computer Won")
 elif computer_choice == 1 and player_choice == 0:
-    print("Player Won")
+    print("You Won")
 elif computer_choice == 1 and player_choice == 1:
     print("Draw")
 elif computer_choice == 1 and player_choice == 2:
-    print("Player Won")
+    print("You Won")
 elif computer_choice == 2 and player_choice == 0:
-    print("Player Won")
+    print("You Won")
 elif computer_choice == 2 and player_choice == 1:
     print("Computer Won")
 elif computer_choice == 2 and player_choice == 2:
